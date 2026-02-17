@@ -5,6 +5,40 @@
     box-sizing: border-box;
 }
 
+/* root */
+:root {
+    --BG-COLOR: #7ea7ff;
+    --CONTAINER-COLOR: #fff;
+    --TEXT-COLOR: rgb(22, 115, 236);
+    --BORDER-COLOR: #1a73e8;
+    --FOCUS-COLOR: #0056b3;
+    --BUTTON-BGCOLOR: #1a73e8;
+    --BTNHOVER-COLOR: #0056b3;
+    --BTN-COLOR: #fff;
+    --SHADOW-COLOR: #000000;
+}
+
+/* Toggle dark mode */
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --BG-COLOR: #00043f;
+        --CONTAINER-COLOR: #010038;
+        --TEXT-COLOR: rgb(255, 255, 255);
+        --BORDER-COLOR: #848ff3;
+        --FOCUS-COLOR: #969dff;
+        --BUTTON-BGCOLOR: #ffffff;
+        --BTNHOVER-COLOR: #8aa0ff;
+        --BTN-COLOR: #000c3f;
+        --SHADOW-COLOR: #92c1ff;
+    }
+    body {
+        color: white;
+    }
+    button:hover{
+        color: white;
+    }
+}
+
 /* Styling body */
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,16 +46,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(rgb(97, 244, 255),rgb(42, 127, 167),rgb(18, 102, 128),#09315f);
+    background: var(--BG-COLOR);
 }
 
 /* Container for the to-do list */
 .container {
-    background-color: #fff;
+    background-color: var(--CONTAINER-COLOR);
     padding: 30px;
     width: 500px;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px var(--SHADOW-COLOR);
 }
 
 /* Heading */
@@ -30,7 +64,7 @@ body {
     margin-bottom: 20px;
     font-size: 2.2rem;
     font-weight: bold;
-    color: rgb(22, 115, 236);
+    color: var(--TEXT-COLOR);
 }
 
 /* input container */
@@ -47,14 +81,14 @@ input[type="text"] {
     font-size: 1rem;
     outline: none;
     transition: 0.3s;
-    border: 2px solid #1a73e8;
+    border: 2px solid var(--BORDER-COLOR);
     border-radius: 8px;
     padding: 12px;
 }
 
 input[type="text"]:focus {
-    border-color: #0056b3;
-    box-shadow: 0 0 5px #0056b3;
+    border-color: var(--FOCUS-COLOR);
+    box-shadow: 0 0 5px var(--FOCUS-COLOR);
 }
 
 /* button styles */
@@ -64,13 +98,13 @@ button {
     transition: 0.3s;
     border-radius: 8px;
     border: none;
-    color: #fff;
-    background-color: #1a73e8;
+    color: var(--BTN-COLOR);
+    background-color: var(--BUTTON-BGCOLOR);
     padding: 12px 20px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--BTNHOVER-COLOR);
 }
 
 /* list styling */
