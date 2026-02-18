@@ -14,3 +14,21 @@ body {
     min-height: 100vh;
     background-color: #e4f8ff;
 }
+
+/* Container for the to-do list */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(22, 115, 236);
+}
