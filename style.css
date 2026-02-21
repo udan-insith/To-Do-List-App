@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #e4f8ff;
+    background: linear-gradient(rgb(97, 244, 255),rgb(42, 127, 167),rgb(18, 102, 128),#09315f);
 }
 
 /* Container for the to-do list */
