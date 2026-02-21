@@ -32,3 +32,43 @@ body {
     font-weight: bold;
     color: rgb(22, 115, 236);
 }
+
+/* input container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* input box */
+input[type="text"] {
+    width: 70%;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    border: 2px solid #1a73e8;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px #0056b3;
+}
+
+/* button styles */
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 12px 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
